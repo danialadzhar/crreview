@@ -107,7 +107,7 @@ class CheckoutController extends Controller
                     $user->status = 'paid';
                     $user->save();
 
-                    return redirect('home')->with('success', 'You Have Make a Payment');
+                    return redirect('home')->with('success', 'You Have Make a Payment!');
 
                 }
 
