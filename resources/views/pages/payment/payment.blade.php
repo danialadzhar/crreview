@@ -17,6 +17,12 @@
         <form action="#" method="POST">
             @csrf
             <div class="row">
+                <div class="col-md-12">
+                    <h3>Make A Payment</h3><br>
+                    <span class="dc_payment_icons_glossy_75 dc_visa_glossy" title="Visa"></span>
+                    <span class="dc_payment_icons_glossy_75 dc_mastercard_glossy" title="Mastercard"></span>
+                    <span class="dc_payment_icons_glossy_75 dc_americanexpress_glossy" title="American Express"></span>
+                </div>
                 <div class="col-md-12">       
                     <div class="form-group">
                         <input type="text" class="form-control" name="card_name" placeholder="Name on card" required>
