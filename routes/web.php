@@ -20,3 +20,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
+
+
+/*
+|--------------------------------------------------------------------------
+| Checkout Controller
+|--------------------------------------------------------------------------
+|
+| Here will be display checkout page
+| Payment process will be here
+|
+*/
+
+Route::get('checkout', '');
