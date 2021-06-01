@@ -21,7 +21,7 @@
                     <p><i class="fas fa-check"></i> Sentence Correction</p>
                     <p><i class="fas fa-check"></i> Free Example</p>
                     <p><i class="fas fa-check"></i> 2 ATS CV</p>
-                <a href="{{ url('checkout') }}/price_1IxYtaDaFLLXIVTMc4ISe4n5" class="btn btn-primary d-flex justify-content-center">Choose Plan</a>
+                <a href="{{ url('checkout/premium') }}" class="btn btn-primary d-flex justify-content-center">Choose Plan</a>
             </div>
         </div>
     </div>

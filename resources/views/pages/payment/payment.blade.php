@@ -14,7 +14,7 @@
 
     </div>
     <div class="col-md-6">
-        <form action="{{ url('chekcout/make-payment') }}" method="POST" data-stripe-publishable-key="pk_test_51Is0JMDaFLLXIVTMSCfVWRJPIQ8CkuiUHo2Q47A8nOrJiVJ2FvFG9xBLSCSbdWGw9tpVuqSj9aHMVJQmz4FVwfb800zju3KukE">
+        <form action="{{ url('chekcout/premium/make-payment') }}" method="POST" data-stripe-publishable-key="pk_test_51Is0JMDaFLLXIVTMSCfVWRJPIQ8CkuiUHo2Q47A8nOrJiVJ2FvFG9xBLSCSbdWGw9tpVuqSj9aHMVJQmz4FVwfb800zju3KukE">
             @csrf
             <div class="row mt-5">
                 <div class="col-md-12">
