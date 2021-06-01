@@ -16,14 +16,14 @@
     <div class="col-md-6">
         <form action="#" method="POST">
             @csrf
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-md-12">
-                    <h3>Make A Payment</h3>
+                    <h3>Please make a payment</h3>
                     <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
                     <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
                     <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
                 </div>
-                <div class="col-md-12">       
+                <div class="col-md-12 mt-3">       
                     <div class="form-group">
                         <input type="text" class="form-control" name="card_name" placeholder="Name on card" required>
                     </div>
