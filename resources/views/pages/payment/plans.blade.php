@@ -36,7 +36,7 @@
                     <p><i class="fas fa-check"></i> Sentence Correction</p>
                     <p><i class="fas fa-check"></i> Free Example</p>
                     <p><i class="fas fa-check"></i> 2 ATS CV</p>
-                <button class="btn btn-secondary d-flex justify-content-center" disabled>Choose Plan</button>
+                <button class="btn btn-secondary btn-block d-flex justify-content-center" disabled>Choose Plan</button>
             </div>
         </div>
     </div>
