@@ -16,7 +16,7 @@
                 Premium Plan
             </div>
             <div class="card-body text-center py-5 px-5">
-                <h2 class="card-title">RM 29.90</h2>
+                <h2 class="card-title">RM 30</h2>
                     <p><i class="fas fa-check"></i> Grammar Checking</p>
                     <p><i class="fas fa-check"></i> Sentence Correction</p>
                     <p><i class="fas fa-check"></i> Free Example</p>
@@ -31,12 +31,12 @@
                 Pro Plan
             </div>
             <div class="card-body text-center py-5 px-5">
-                <h2 class="card-title">RM 59.90</h2>
+                <h2 class="card-title">RM 60</h2>
                     <p><i class="fas fa-check"></i> Grammar Checking</p>
                     <p><i class="fas fa-check"></i> Sentence Correction</p>
                     <p><i class="fas fa-check"></i> Free Example</p>
                     <p><i class="fas fa-check"></i> 2 ATS CV</p>
-                <a href="{{ url('checkout') }}" class="btn btn-primary d-flex justify-content-center">Choose Plan</a>
+                <button class="btn btn-secondary d-flex justify-content-center" disabled>Choose Plan</button>
             </div>
         </div>
     </div>

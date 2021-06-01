@@ -32,5 +32,6 @@ Route::get('home', 'HomeController@index')->name('home');
 |
 */
 
-Route::get('checkout', 'CheckoutController@payment');
+Route::get('checkout/{id}', 'CheckoutController@payment');
 Route::get('plans', 'CheckoutController@plans');
+Route::post('checkout/make-payment', 'CheckoutController@checkout');

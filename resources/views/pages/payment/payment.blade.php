@@ -14,7 +14,7 @@
 
     </div>
     <div class="col-md-6">
-        <form action="#" method="POST">
+        <form action="{{ url('chekcout/make-payment') }}" method="POST" data-stripe-publishable-key="pk_test_51Is0JMDaFLLXIVTMSCfVWRJPIQ8CkuiUHo2Q47A8nOrJiVJ2FvFG9xBLSCSbdWGw9tpVuqSj9aHMVJQmz4FVwfb800zju3KukE">
             @csrf
             <div class="row mt-5">
                 <div class="col-md-12">
@@ -25,12 +25,12 @@
                 </div>
                 <div class="col-md-12 mt-3">       
                     <div class="form-group">
-                        <input type="text" class="form-control" name="card_name" placeholder="Name on card" required>
+                        <input type="text" class="form-control" name="cardholder" placeholder="Name on card" required>
                     </div>
                 </div>
                 <div class="col-md-12">       
                     <div class="form-group">
-                        <input type="text" class="form-control" name="card_number" placeholder="exp. 4278172818250916" required>
+                        <input type="text" class="form-control" name="cardnumber" placeholder="exp. 4278172818250916" required>
                     </div>
                 </div>
                 <div class="col-md-4">       
