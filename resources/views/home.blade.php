@@ -38,14 +38,14 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card shadow">
-            <div class="card-body">
+            <div class="card-body px-5 py-5">
                 <div class="row">
                     <div class="col-md-12">
                         <h3>My Document</h3>
                         <hr>
                     </div>
-                    <div class="col-md-12">
-                        <button class="btn btn-primary"><i class="fas fa-file-upload"></i> Upload Document</button>
+                    <div class="col-md-12 mt-3">
+                        <button class="btn btn-primary float-right"><i class="fas fa-file-upload"></i> Upload Document</button>
                     </div>
                     <div class="col-md-12">
                         <div class="table-responsive">
