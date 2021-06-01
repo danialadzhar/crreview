@@ -34,7 +34,7 @@ class CheckoutController extends Controller
      * 
      * 
      */
-    public function payment($id)
+    public function payment()
     {
         return view('pages.payment.payment');
     }
