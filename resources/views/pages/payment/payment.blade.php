@@ -14,7 +14,8 @@
 
     </div>
     <div class="col-md-6">
-        <form action="{{ url('checkout') }}" method="POST">
+        <form action="#" method="POST">
+            @csrf
             <div class="row">
                 <div class="col-md-12">       
                     <div class="form-group">
