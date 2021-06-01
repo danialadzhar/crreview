@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-@if($user->status == 'pending')
+@if($user->status == 'unpaid')
 <div class="row mt-5 px-5">
     <div class="col-md-6">
         <div class="card shadow">
