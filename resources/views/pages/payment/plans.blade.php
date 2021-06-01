@@ -12,10 +12,10 @@
 <div class="row mt-5">
     <div class="col-md-6">
         <div class="card">
-            <div class="card-header">
-                Pro Plan
+            <div class="card-header text-center">
+                Premium Plan
             </div>
-            <div class="card-body text-center">
+            <div class="card-body text-center py-5 px-5">
                 <h2 class="card-title">RM 29.90</h2>
                     <p><i class="fas fa-check"></i> Grammar Checking</p>
                     <p><i class="fas fa-check"></i> Sentence Correction</p>
@@ -27,10 +27,10 @@
     </div>
     <div class="col-md-6">
         <div class="card">
-            <div class="card-header">
+            <div class="card-header text-center">
                 Pro Plan
             </div>
-            <div class="card-body text-center">
+            <div class="card-body text-center py-5 px-5">
                 <h2 class="card-title">RM 59.90</h2>
                     <p><i class="fas fa-check"></i> Grammar Checking</p>
                     <p><i class="fas fa-check"></i> Sentence Correction</p>
