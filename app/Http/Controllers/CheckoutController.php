@@ -25,4 +25,6 @@ class CheckoutController extends Controller
     {
         return view('pages.payment.payment');
     }
+
+    
 }
