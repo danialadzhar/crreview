@@ -64,7 +64,7 @@
                         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                         Please Wait...
                     </button>
-                    <button class="btn btn-success btn-block">Pay Now <i class="fas fa-arrow-right"></i></button>
+                    <button id="btn" type="sumbmit" class="btn btn-success btn-block">Pay Now <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </form>

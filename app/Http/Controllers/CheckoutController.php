@@ -44,7 +44,7 @@ class CheckoutController extends Controller
      * 
      * 
      */
-    public function checkout()
+    public function checkout(Request $request)
     {
         
         $user = Auth::User();
