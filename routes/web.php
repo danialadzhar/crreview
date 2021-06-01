@@ -32,4 +32,4 @@ Route::get('home', 'HomeController@index')->name('home');
 |
 */
 
-Route::get('checkout', '');
+Route::get('checkout', 'CheckoutController@payment');
