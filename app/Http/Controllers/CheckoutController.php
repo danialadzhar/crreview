@@ -25,8 +25,19 @@ class CheckoutController extends Controller
      * 
      */
     public function plans()
-    {
-        return view('pages.payment.plans');
+    {   
+        $user = Auth::User();
+
+        if($user->status == 'unpaid')
+        {
+
+            return view('pages.payment.plans');  
+
+        }else{
+
+            return redirect('home');
+
+        }
     }
 
     /**
@@ -36,7 +47,18 @@ class CheckoutController extends Controller
      */
     public function payment()
     {
-        return view('pages.payment.payment');
+        $user = Auth::User();
+        
+        if($user->status == 'unpaid')
+        {
+
+            return view('pages.payment.payment');  
+
+        }else{
+
+            return redirect('home');
+
+        }
     }
 
     /**
