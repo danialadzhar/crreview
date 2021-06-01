@@ -23,6 +23,17 @@
                     <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
                     <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
                 </div>
+                    <!-- Alerts -->
+                @if(session('error'))
+                    <div class="col-md-12 mt-3">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Sorry!</strong> {{ session('error') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                @endif
                 <div class="col-md-12 mt-3">       
                     <div class="form-group">
                         <input type="text" class="form-control" name="cardholder" placeholder="Name on card" required>
