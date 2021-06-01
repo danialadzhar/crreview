@@ -15,7 +15,7 @@
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
-                <a href="{{ url('checkout') }}" class="btn btn-primary d-flex justify-content-center mt-4 shadow text-decoration-none">Buy Now</a>
+                <a href="{{ url('plans') }}" class="btn btn-primary d-flex justify-content-center mt-4 shadow text-decoration-none">Buy Now</a>
             </div>
         </div>
     </div>

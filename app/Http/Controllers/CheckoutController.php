@@ -17,6 +17,16 @@ class CheckoutController extends Controller
     }
 
     /**
+     * Plans
+     * 
+     * 
+     */
+    public function plans()
+    {
+        return view('pages.payment.plans');
+    }
+
+    /**
      * Make a payment
      * 
      * 
