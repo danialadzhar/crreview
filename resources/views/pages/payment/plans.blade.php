@@ -17,12 +17,10 @@
             </div>
             <div class="card-body text-center">
                 <h2 class="card-title">RM 29.90</h2>
-                <ul>
-                    <li>Grammar Checking</li>
-                    <li>Sentence Correction</li>
-                    <li>Free Example</li>
-                    <li>2 ATS CV</li>
-                </ul>
+                    <p><i class="fas fa-check"></i> Grammar Checking</p>
+                    <p><i class="fas fa-check"></i> Sentence Correction</p>
+                    <p><i class="fas fa-check"></i> Free Example</p>
+                    <p><i class="fas fa-check"></i> 2 ATS CV</p>
                 <a href="{{ url('checkout') }}" class="btn btn-primary d-flex justify-content-center">Choose Plan</a>
             </div>
         </div>
@@ -33,13 +31,11 @@
                 Pro Plan
             </div>
             <div class="card-body text-center">
-                <h2 class="card-title">RM 29.90</h2>
-                <ul>
-                    <li>Grammar Checking</li>
-                    <li>Sentence Correction</li>
-                    <li>Free Example</li>
-                    <li>2 ATS CV</li>
-                </ul>
+                <h2 class="card-title">RM 59.90</h2>
+                    <p><i class="fas fa-check"></i> Grammar Checking</p>
+                    <p><i class="fas fa-check"></i> Sentence Correction</p>
+                    <p><i class="fas fa-check"></i> Free Example</p>
+                    <p><i class="fas fa-check"></i> 2 ATS CV</p>
                 <a href="{{ url('checkout') }}" class="btn btn-primary d-flex justify-content-center">Choose Plan</a>
             </div>
         </div>
