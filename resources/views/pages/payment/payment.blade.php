@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-3">
-                    <button id="wait" style="display: none;" class="btn btn-danger btn-block" type="button" disabled>
+                    <button id="wait" style="display: none;" class="btn btn-success btn-block" type="button" disabled>
                         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                         Please Wait...
                     </button>
