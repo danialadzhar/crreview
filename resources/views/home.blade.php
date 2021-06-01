@@ -45,6 +45,9 @@
                         <hr>
                     </div>
                     <div class="col-md-12">
+                        <button class="btn btn-primary"><i class="fas fa-file-upload"></i> Upload Document</button>
+                    </div>
+                    <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
