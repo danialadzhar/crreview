@@ -18,10 +18,10 @@
             @csrf
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Make A Payment</h3><br>
-                    <span class="dc_payment_icons_glossy_75 dc_visa_glossy" title="Visa"></span>
-                    <span class="dc_payment_icons_glossy_75 dc_mastercard_glossy" title="Mastercard"></span>
-                    <span class="dc_payment_icons_glossy_75 dc_americanexpress_glossy" title="American Express"></span>
+                    <h3>Make A Payment</h3>
+                    <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
+                    <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
+                    <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
                 </div>
                 <div class="col-md-12">       
                     <div class="form-group">
