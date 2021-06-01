@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
+@section('title')
+    Home
+@endsection
+
 @section('content')
+@if($user->status == 'pending')
 <div class="row mt-5 px-5">
     <div class="col-md-6">
         <div class="card shadow">
@@ -27,4 +32,51 @@
         </div>
     </div>
 </div>
+
+@else
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>My Document</h3>
+                        <hr>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Document</th>
+                                    <th>Status</th>
+                                    <th>Upload At</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>12vjc31213.pdf</td>
+                                        <td><span class="badge badge-warning">Wating</span></td>
+                                        <td>2021-06-01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>dam75b6a4v2.pdf</td>
+                                        <td><span class="badge badge-success">Approved</span></td>
+                                        <td>2021-06-01</td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@endif
 @endsection
