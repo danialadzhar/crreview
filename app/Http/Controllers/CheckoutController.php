@@ -110,7 +110,7 @@ class CheckoutController extends Controller
                     // Make a Payment
                     Stripe\Charge::create([
 
-                        "amount" => number_format($course->sales_price - ($course->sales_price * 10/100), 2) * 100,
+                        "amount" => 30 * 100,
                         "currency" => "myr",
                         "description" => "Premium Plan",
                         'customer' => $customer->id,
