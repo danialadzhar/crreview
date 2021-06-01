@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-3">
-                    <button class="btn btn-primary">Pay Now</button>
+                    <button class="btn btn-success btn-block">Pay Now <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </form>
