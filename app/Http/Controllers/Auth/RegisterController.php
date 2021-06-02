@@ -64,32 +64,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $users = User::all();
-        $get_pre_user_id = User::orderBy('id','Desc')->first();
-
-        if($users->isEmpty())
-        {
-            return User::create([
-                'user_id' => '001',
-                'name' => $data['name'],
-                'email' => $data['email'],
-                'password' => Hash::make($data['password']),
-                'status' => 'unpaid',
-                'role' => 'customer'
-            ]);
-
-        }else{
-
-            $user_id = '00' . $get_pre_user_id->id + 1;
-            return User::create([
-                'user_id' => $user_id,
-                'name' => $data['name'],
-                'email' => $data['email'],
-                'password' => Hash::make($data['password']),
-                'status' => 'unpaid',
-                'role' => 'customer'
-            ]);
-        }
+        return User::create([
+            'user_id' => uniqid(),
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'status' => 'unpaid',
+            'role' => 'customer'
+        ]);
 
     }
 }
