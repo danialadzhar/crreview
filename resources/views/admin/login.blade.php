@@ -14,10 +14,13 @@
 </head>
 <body>  
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row mt-5">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6">
                 <div class="card d-flex justify-content-center shadow">
-                    <div class="card-body py-4 px-4">
+                    <div class="card-body py-5 px-5">
                         <form action="{{ url('admin/login/post') }}" method="POST">
                             @csrf
                             <div class="row">
@@ -42,6 +45,9 @@
                         </form>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-3">
+
             </div>
         </div>
     </div>
