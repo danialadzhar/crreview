@@ -15,7 +15,7 @@
 <body>  
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <div class="card d-flex justify-content-center shadow">
                     <div class="card-body py-4 px-4">
                         <form action="{{ url('admin/login/post') }}" method="POST">
