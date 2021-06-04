@@ -1,3 +1,4 @@
+@if(!isset(Auth::guard('admin')->user()->email))
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +29,12 @@
                                     <h4>Please Sign In</h4>
                                     <hr>
                                 </div>
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <input type="email" name="email" class="form-control" placeholder="Email Address" required autofocus>
@@ -56,3 +63,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/5c12e9bac7.js" crossorigin="anonymous"></script>
 </html>
+@else 
+  <script>
+      location.replace("{{ url('admin') }}");
+  </script>
+@endif
