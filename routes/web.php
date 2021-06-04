@@ -35,3 +35,16 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::get('checkout/premium', 'CheckoutController@payment');
 Route::get('plans', 'CheckoutController@plans');
 Route::post('chekcout/premium/make-payment', 'CheckoutController@checkout');
+
+
+/*
+|--------------------------------------------------------------------------
+| Admin Controller
+|--------------------------------------------------------------------------
+|
+| All user controll will be here
+| Check new apply CV Review or Apply Consultant
+|
+*/
+
+Route::get('admin/login', 'AdminController@login');
