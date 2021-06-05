@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<form action="{{ url('admin/consultant/update') }}/{{ $user->user_id }}" enctype="multipart/form-data" method="POST">
+<form action="{{ url('admin/consultant-update') }}/{{ $user->user_id }}" enctype="multipart/form-data" method="POST">
     @csrf
     <div class="row d-flext justify-content-center mt-5 px-5">
         <div class="col-md-8">
