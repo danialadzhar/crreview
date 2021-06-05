@@ -18,7 +18,7 @@ class AdminController extends Controller
         return view('admin.login');
     }
 
-    public function login_process()
+    public function login_process(Request $request)
     {
         $credentials = $request->only('email', 'password');
         
