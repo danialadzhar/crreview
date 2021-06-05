@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 use Auth;
 
 class AdminController extends Controller
@@ -10,9 +11,17 @@ class AdminController extends Controller
 
     public function index()
     {
-        return view('admin.home');
+        $count = 1;
+        $users_pending_consultant = Users::where('status', 'pending')->where('role', 'consultant')->get();
+
+        return view('admin.home', compact('users_pending_consultant','count'));
     }
     
+    /**
+     * Login process
+     * 
+     * 
+     */
     public function login()
     {
         return view('admin.login');

@@ -21,12 +21,14 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Danial Adzhar</td>
-                        <td>danial0597@gmail.com</td>
-                        <td><a class="btn btn-light btn-sm"><i class="fas fa-eye"></i></a></td>
-                    </tr>
+                        @foreach ($users_pending_consultant as $user)
+                            <tr>
+                                <td>{{ $count++ }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->email }}</td>
+                                <td><a class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a></td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
