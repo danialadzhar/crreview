@@ -93,7 +93,7 @@ class AdminController extends Controller
         $consultant_info->phone_no;
         $consultant_info->address;
 
-        dd($request->status);
+        dd($request->name);
         // $consultant_info->save();
         // $user->save();
 
