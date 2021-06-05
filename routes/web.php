@@ -20,7 +20,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
-Route::get('consultant/apply', 'HomeController@consultant_page');
+
+
+/*
+|--------------------------------------------------------------------------
+| Consultant Controller
+|--------------------------------------------------------------------------
+|
+| Display form
+| Display cv review
+|
+*/
+
+Route::get('consultant/apply', 'ConsultantController@index');
 
 
 /*

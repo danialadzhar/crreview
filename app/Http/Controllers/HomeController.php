@@ -29,16 +29,4 @@ class HomeController extends Controller
         return view('home', compact('user'));
     }
 
-    /**
-     * Consultant page
-     * 
-     * 
-     */
-    public function consultant_page()
-    {
-        $user = Auth::User();
-
-        return view('pages.consultant.index', compact('user'));
-    }
-
 }

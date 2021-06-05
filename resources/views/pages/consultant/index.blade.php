@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<form action="#" method="POST">
+<form action="{{ url('consultant/apply/post') }}" method="POST">
     @csrf
     <div class="row d-flext justify-content-center mt-5 px-5">
         <div class="col-md-8">

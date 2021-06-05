@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-@if($user->status == 'unpaid')
+@if($user->status == 'unpaid' && $user->role == 'customer')
 <div class="row mt-5 px-5">
     <div class="col-md-6">
         <div class="card shadow">
@@ -33,7 +33,62 @@
     </div>
 </div>
 
-@else
+@elseif ($user->status == 'pending' && $user->role == 'consultant')
+
+<div class="row mt-5 px-5 d-flex justify-content-center">
+    <div class="col-md-6">
+        <div class="alert alert-warning" role="alert">
+            <strong>Please Wait!</strong> Your request will be confirmed within 24 hours by Administrator.
+        </div>
+    </div>
+</div>
+
+@elseif ($user->status == 'approve' && $user->role == 'consultant')
+
+<div class="row mt-5">
+    <div class="col-md-12">
+        <div class="card shadow">
+            <div class="card-body px-5 py-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Need To Review</h3>
+                        <hr>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Document</th>
+                                    <th>Status</th>
+                                    <th>Upload At</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>12vjc31213.pdf</td>
+                                        <td><span class="badge badge-warning">Wating</span></td>
+                                        <td>2021-06-01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>dam75b6a4v2.pdf</td>
+                                        <td><span class="badge badge-success">Approved</span></td>
+                                        <td>2021-06-01</td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@elseif ($user->status == 'paid' && $user->role == 'customer')
 
 <div class="row mt-5">
     @if(session('success'))
