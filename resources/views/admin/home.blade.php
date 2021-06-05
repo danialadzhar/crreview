@@ -23,7 +23,7 @@
                   <td>1</td>
                   <td>Danial Adzhar</td>
                   <td>danial0597@gmail.com</td>
-                  <td><a class="btn btn-light btn-sm"><i class="fas fa-eye"></i></a></td>
+                  <td><a class="btn btn-light btn-sm d-flex justify-content-center"><i class="fas fa-eye"></i></a></td>
               </tr>
             </tbody>
         </table>
