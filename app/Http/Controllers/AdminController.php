@@ -47,4 +47,19 @@ class AdminController extends Controller
         
         return redirect()->back()->with('error', 'Wrong email or password!');
     }
+
+    /**
+     * Consultant page
+     * 
+     * 
+     */
+    public function consultant($status,$role)
+    {   
+        $count = 1;
+        $users = User::where('status', $status)->where('role', $role)->get();
+        $user_status = $status;
+        $user_role = $role;
+
+        return view('admin.pages.consultant.index', compact('users', 'user_status', 'user_role', 'count'));
+    }
 }
