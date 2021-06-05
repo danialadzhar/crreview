@@ -7,7 +7,7 @@
 @section('content')
 <form action="#" method="POST">
     @csrf
-    <div class="row mt-5 px-5">
+    <div class="row d-flext justify-content-center mt-5 px-5">
         <div class="col-md-8">
             <h2>Please Fill This Form</h2>
             <hr>
