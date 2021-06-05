@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\ConsultantInfo;
 use Auth;
 
 class AdminController extends Controller
@@ -61,5 +62,31 @@ class AdminController extends Controller
         $user_role = $role;
 
         return view('admin.pages.consultant.index', compact('users', 'user_status', 'user_role', 'count'));
+    }
+
+    /**
+     * Consultant user edit
+     * 
+     * 
+     */
+    public function edit_consultant($id)
+    {   
+        $user = User::where('user_id', $id)->first();
+        $consultant_info = ConsultantInfo::where('user_id', $id)->first();
+
+        return view('admin.pages.consultant.edit', compact('user', 'consultant_info'));
+    }
+
+    /**
+     * Edit consultant function
+     * 
+     * 
+     */
+    public function update_consultant(Request $request, $id)
+    {
+        $user = User::where('user_id', $id)->first();
+        $consultant_info = ConsultantInfo::where('user_id', $id)->first();
+
+        return redirect('admin')->with('success', );
     }
 }

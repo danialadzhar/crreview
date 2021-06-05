@@ -25,7 +25,7 @@
                 @foreach($users as $user)
                     <tr>
                         <td>{{ $count++ }}</td>
-                        <td><a href="" class="text-link">{{ $user->name }}</a></td>
+                        <td><a href="{{ url('admin/consultant/edit') }}/{{ $user->user_id }}" class="text-link">{{ $user->name }}</a></td>
                         <td>{{ $user->email }}</td>
                         <td><span class="badge badge-warning">Pending</span></td>
                         <td>Consultant</td>
