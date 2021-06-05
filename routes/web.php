@@ -33,6 +33,7 @@ Route::get('home', 'HomeController@index')->name('home');
 */
 
 Route::get('consultant/apply', 'ConsultantController@index');
+Route::post('consultant/apply/post', 'ConsultantController@store');
 
 
 /*

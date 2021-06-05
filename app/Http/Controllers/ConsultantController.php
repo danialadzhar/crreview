@@ -40,6 +40,6 @@ class ConsultantController extends Controller
 
         $user_update->save();
 
-        return redirect()->back()->with('success', '');
+        return redirect('home');
     }
 }
