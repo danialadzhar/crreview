@@ -11,11 +11,11 @@ class AdminController extends Controller
 
     public function index()
     {
-        $count = 1;
-        $users_pending_consultant = User::where('status', 'pending')->where('role', 'consultant')->limit(7)->get();
+
+        $count_unpaid_customer = User::where('status', 'unpaid')->where('role', 'customer')->count();
         $count_pending_consultant = User::where('status', 'approved')->where('role', 'consultant')->count();
 
-        return view('admin.home', compact('users_pending_consultant','count', 'count_pending_consultant'));
+        return view('admin.home', compact('count_pending_consultant', 'count_unpaid_customer'));
     }
     
     /**
