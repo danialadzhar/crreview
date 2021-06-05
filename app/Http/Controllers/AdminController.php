@@ -87,6 +87,6 @@ class AdminController extends Controller
         $user = User::where('user_id', $id)->first();
         $consultant_info = ConsultantInfo::where('user_id', $id)->first();
 
-        return redirect('admin')->with('success', );
+        return redirect('admin')->with('success', 'Consultant Updated!');
     }
 }
