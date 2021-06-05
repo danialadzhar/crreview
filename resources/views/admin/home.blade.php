@@ -28,7 +28,7 @@
                         <h1>{{ $count_pending_consultant }}</h1>
                     </div>
                     <div class="col-md-12">
-                        <p><i class="fas fa-exclamation-circle text-secondary"></i> Total Consultant</p>
+                        <p><i class="fas fa-exclamation-circle text-secondary"></i> Unapproved Consultant</p>
                     </div>
                 </div>
             </div>
