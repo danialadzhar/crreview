@@ -49,38 +49,6 @@
         <div class="col-md-8">
             <div class="form-group">
                 <label>Status</label><br>
-                {{-- Approved --}}
-                @if ($user->status == 'approved')
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="approved" name="customRadioInline" name="status" value="approved" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="approved">Approved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input">
-                        <label class="custom-control-label" for="unapproved">Unapproved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="pending" name="customRadioInline" name="status" value="pending" class="custom-control-input">
-                        <label class="custom-control-label" for="pending">Pending</label>
-                    </div>
-                @endif
-
-                {{-- Unapproved --}}
-                @if ($user->status == 'unapproved')
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="unapproved">Unapproved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="approved" name="customRadioInline" name="status" value="approved" class="custom-control-input">
-                        <label class="custom-control-label" for="approved">Approved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="pending" name="customRadioInline" name="status" value="pending" class="custom-control-input">
-                        <label class="custom-control-label" for="pending">Pending</label>
-                    </div>
-                @endif
-
                 {{-- Pending --}}
                 @if ($user->status == 'pending')
                     <div class="custom-control custom-radio custom-control-inline">
@@ -88,7 +56,7 @@
                         <label class="custom-control-label" for="pending">Pending</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input">
+                        <input type="radio" id="unapproved" name="customRadioInline" name="unapproved" value="unapproved" class="custom-control-input">
                         <label class="custom-control-label" for="unapproved">Unapproved</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
