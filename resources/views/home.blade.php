@@ -43,6 +43,16 @@
     </div>
 </div>
 
+@elseif ($user->status == 'unapproved' && $user->role == 'consultant')
+
+<div class="row mt-5 px-5 d-flex justify-content-center">
+    <div class="col-md-10">
+        <div class="alert alert-danger" role="alert">
+            <strong>Sorry!</strong> We're sorry, your request to be a consultant has been denied, please try to resubmit your documents <a href="{{ url('consultant/apply') }}" class="text-link">here</a>
+        </div>
+    </div>
+</div>
+
 @elseif ($user->status == 'approve' && $user->role == 'consultant')
 
 <div class="row mt-5">
