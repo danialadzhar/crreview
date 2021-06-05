@@ -18,9 +18,15 @@ class AdminController extends Controller
         return view('admin.login');
     }
 
-    public function login_process(Request $request)
+    /**
+     * Sign functionality
+     * 
+     * 
+     */
+    public function signin_process(Request $request)
     {
         $credentials = $request->only('email', 'password');
+        
         
         if(Auth::guard('admin')->attempt($credentials)) 
         {
@@ -28,7 +34,7 @@ class AdminController extends Controller
             return redirect('admin');
 
         }
-
+        
         return redirect()->back()->with('error', 'Wrong email or password!');
     }
 }

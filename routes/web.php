@@ -49,4 +49,4 @@ Route::post('chekcout/premium/make-payment', 'CheckoutController@checkout');
 
 Route::get('admin', 'AdminController@index');
 Route::get('admin/login', 'AdminController@login');
-Route::post('admin/login/post','AdminController@login_process');
+Route::post('admin/login/post','AdminController@signin_process');
