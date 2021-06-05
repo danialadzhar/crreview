@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<form action="{{ url('consultant/apply/post') }}" method="POST">
+<form action="{{ url('consultant/apply/post') }}" enctype="multipart/form-data" method="POST">
     @csrf
     <div class="row d-flext justify-content-center mt-5 px-5">
         <div class="col-md-8">
@@ -40,7 +40,7 @@
             <div class="form-group">
                 <label>Supporting Document</label>
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="qualification">
+                    <input type="file" class="custom-file-input" name="document" id="qualification">
                     <label class="custom-file-label" for="qualification">Choose file</label>
                 </div>
             </div>

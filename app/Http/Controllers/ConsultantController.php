@@ -25,12 +25,15 @@ class ConsultantController extends Controller
     {   
 
         $user = Auth::User();
+        $document = 'consultant_review_' . uniqid().'.' . $request->document->extension();
+		$request->document->move(public_path('consultant'), $document);
 
         ConsultantInfo::create([
 
             'address' => $request->address,
             'phoneno' => $request->phoneno ,
             'user_id' => $user->user_id,
+            'file_name' => $document;
 
         ]);
 
