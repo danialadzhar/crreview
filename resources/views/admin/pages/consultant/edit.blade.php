@@ -66,7 +66,7 @@
                 @endif
 
                 {{-- Unapproved --}}
-                @if ($user->status == 'approved')
+                @if ($user->status == 'unapproved')
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input" checked>
                         <label class="custom-control-label" for="unapproved">Unapproved</label>
