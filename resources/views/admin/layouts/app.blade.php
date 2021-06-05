@@ -10,7 +10,7 @@
     @yield('css')
     <style>
       body{
-        background-color: #ececec;
+        background-color: #e7e7e7;
       }
     </style>
 </head>
