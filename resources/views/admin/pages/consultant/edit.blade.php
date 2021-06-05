@@ -48,7 +48,7 @@
 
         <div class="col-md-8">
             <div class="form-group">
-                <label>Status</label>
+                <label>Status</label><br>
                 {{-- Approved --}}
                 @if ($user->status == 'approved')
                     <div class="custom-control custom-radio custom-control-inline">
