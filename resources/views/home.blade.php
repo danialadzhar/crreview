@@ -36,7 +36,7 @@
 @elseif ($user->status == 'pending' && $user->role == 'consultant')
 
 <div class="row mt-5 px-5 d-flex justify-content-center">
-    <div class="col-md-6">
+    <div class="col-md-10">
         <div class="alert alert-warning" role="alert">
             <strong>Please Wait!</strong> Your request will be confirmed within 24 hours by Administrator.
         </div>
