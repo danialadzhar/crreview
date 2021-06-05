@@ -65,3 +65,4 @@ Route::get('admin', 'AdminController@index');
 Route::get('admin/login', 'AdminController@login');
 Route::post('admin/login/post','AdminController@login_process');
 Route::get('admin/consultant/{status}/{role}', 'AdminController@consultant');
+Route::get('admin/consultant/edit/{id}', 'AdminController@edit_consultant');
