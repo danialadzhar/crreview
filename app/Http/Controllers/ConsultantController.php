@@ -33,7 +33,7 @@ class ConsultantController extends Controller
             'address' => $request->address,
             'phoneno' => $request->phoneno ,
             'user_id' => $user->user_id,
-            'file_name' => $document;
+            'file_name' => $document
 
         ]);
 
