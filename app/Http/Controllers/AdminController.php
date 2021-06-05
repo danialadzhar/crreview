@@ -23,7 +23,7 @@ class AdminController extends Controller
      * 
      * 
      */
-    public function signin_process(Request $request)
+    public function login_process(Request $request)
     {
         $credentials = $request->only('email', 'password');
         

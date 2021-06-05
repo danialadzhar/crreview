@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
+Route::get('consultant/apply', 'HomeController@consultant_page');
 
 
 /*
@@ -49,4 +50,4 @@ Route::post('chekcout/premium/make-payment', 'CheckoutController@checkout');
 
 Route::get('admin', 'AdminController@index');
 Route::get('admin/login', 'AdminController@login');
-Route::post('admin/login/post','AdminController@signin_process');
+Route::post('admin/login/post','AdminController@login_process');
