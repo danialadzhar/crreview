@@ -34,7 +34,7 @@ class HomeController extends Controller
      * 
      * 
      */
-    public function cosultant_page()
+    public function consultant_page()
     {
         $user = Auth::User();
 
