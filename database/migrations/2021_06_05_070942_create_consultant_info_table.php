@@ -15,7 +15,7 @@ class CreateConsultantInfoTable extends Migration
     {
         Schema::create('consultant_info', function (Blueprint $table) {
             $table->id();
-            $table->string('address');
+            $table->text('address');
             $table->string('phoneno');
             $table->string('user_id');
             $table->timestamps();
