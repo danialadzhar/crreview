@@ -36,16 +36,6 @@
                 <textarea name="address" class="form-control" placeholder="Enter Address" rows="4">{{ $consultant_info->address }}</textarea>
             </div>
         </div>
-        {{-- <div class="col-md-8">
-            <div class="form-group">
-                <label>Supporting Document</label>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" name="document" id="qualification">
-                    <label class="custom-file-label" for="qualification">Choose file</label>
-                </div>
-            </div>
-        </div> --}}
-
         <div class="col-md-8">
             <div class="form-group">
                 <label>Status</label><br>
