@@ -8,6 +8,7 @@
 <div class="row">
     <div class="col-md-8">
         <h3>List Consultant</h3>
+        <hr>
         <table class="table">
             <thead class="thead-dark">
               <tr>
