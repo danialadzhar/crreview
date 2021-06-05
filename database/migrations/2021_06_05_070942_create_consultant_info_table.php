@@ -18,6 +18,7 @@ class CreateConsultantInfoTable extends Migration
             $table->text('address');
             $table->string('phoneno');
             $table->string('user_id');
+            $table->string('file_name');
             $table->timestamps();
         });
     }
