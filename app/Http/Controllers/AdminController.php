@@ -89,7 +89,7 @@ class AdminController extends Controller
 
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->status = $request->unapproved;
+        $user->status = $request->status;
         $consultant_info->phone_no;
         $consultant_info->address;
 
