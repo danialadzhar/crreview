@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-10">
         <h3>List Consultant</h3>
         <hr>
         <table class="table">
@@ -40,9 +40,9 @@
             </tbody>
         </table>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-2">
         <div class="card shadow">
-            <div class="card-body py-4 px-4">
+            <div class="card-body text-center py-4 px-4">
                 <div class="row">
                     <div class="col-md-12">
                         <h1>78</h1>
