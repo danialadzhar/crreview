@@ -142,7 +142,7 @@
                                   </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($user_cv_review as $user)
+                                    @foreach($user_cv_review as $cv)
                                         <tr>
                                             <td>{{ $count++ }}</td>
                                             <td>{{ $cv->file_name }}</td>
