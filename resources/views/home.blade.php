@@ -142,18 +142,26 @@
                                   </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>12vjc31213.pdf</td>
-                                        <td><span class="badge badge-warning">Wating</span></td>
-                                        <td>2021-06-01</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>dam75b6a4v2.pdf</td>
-                                        <td><span class="badge badge-success">Approved</span></td>
-                                        <td>2021-06-01</td>
-                                    </tr>
+                                    @foreach($user_cv_review as $user)
+                                        <tr>
+                                            <td>{{ $count++ }}</td>
+                                            <td>{{ $cv->file_name }}</td>
+                                            <td>
+                                                @if($cv->status == 'inreview')
+                                                    <span class="badge badge-warning">In Review</span>
+                                                @endif
+                                                @if($cv->status == 'approved')
+                                                    <span class="badge badge-success">Approved</span>
+                                                @endif
+                                                @if($cv->status == 'rejected')
+                                                    <span class="badge badge-danger">Rejected</span>
+                                                @endif
+                                            </td>
+                                            <td>
+                                                {{ $cv->created_at }}
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                               </table>
                           </div>

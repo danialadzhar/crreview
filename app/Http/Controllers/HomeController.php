@@ -28,9 +28,10 @@ class HomeController extends Controller
         $user = Auth::User();
 
         $count = 1;
-        $consultant_assigned = ConsultantAssigned::where('user_id', $user->user_id)->get();
+        $consultant_assigned = ConsultantAssigned::where('consultant_id', $user->user_id)->get();
+        $user_cv_review = ConsultantAssigned::where('user_id', $user->user_id)->get();
 
-        return view('home', compact('user', 'consultant_assigned', 'count'));
+        return view('home', compact('user', 'consultant_assigned', 'count', 'user_cv_review'));
     }
 
 }
