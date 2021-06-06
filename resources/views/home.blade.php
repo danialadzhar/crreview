@@ -48,7 +48,7 @@
 <div class="row mt-5 px-5 d-flex justify-content-center">
     <div class="col-md-10">
         <div class="alert alert-danger" role="alert">
-            <strong>Sorry!</strong> We're sorry, your request to be a consultant has been denied, please try to resubmit your documents <a href="{{ url('consultant/apply') }}" class="text-link">here</a>
+            <strong>Sorry!</strong> We're sorry, your request to be a consultant has been denied, please try to resubmit your documents <br><br> <a href="{{ url('consultant/apply') }}" class="text-link">Click Here</a>
         </div>
     </div>
 </div>
