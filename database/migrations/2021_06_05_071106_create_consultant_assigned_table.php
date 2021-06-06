@@ -15,6 +15,7 @@ class CreateConsultantAssignedTable extends Migration
     {
         Schema::create('consultant_assigned', function (Blueprint $table) {
             $table->id();
+            $table->string('file_name');
             $table->string('consultant_id');
             $table->string('user_id');
             $table->string('status');
