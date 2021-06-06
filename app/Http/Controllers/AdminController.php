@@ -93,10 +93,10 @@ class AdminController extends Controller
         $consultant_info->phone_no;
         $consultant_info->address;
 
-        dd($request->status);
-        // $consultant_info->save();
-        // $user->save();
+        // dd($request->status);
+        $consultant_info->save();
+        $user->save();
 
-        // return redirect('admin')->with('success', 'Consultant Updated!');
+        return redirect('admin')->with('success', 'Consultant Updated!');
     }
 }
