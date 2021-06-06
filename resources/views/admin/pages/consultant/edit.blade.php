@@ -38,54 +38,24 @@
         </div>
         <div class="col-md-8">
             <div class="form-group">
-                <label>Status</label><br>
-                {{-- Approved --}}
-                @if ($user->status == 'approved')
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="approved" name="customRadioInline" name="status" value="approved" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="approved">Approved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input">
-                        <label class="custom-control-label" for="unapproved">Unapproved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="pending" name="customRadioInline" name="status" value="pending" class="custom-control-input">
-                        <label class="custom-control-label" for="pending">Pending</label>
-                    </div>
-                @endif
-
-                {{-- Unapproved --}}
-                @if ($user->status == 'unapproved')
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="unapproved">Unapproved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="approved" name="customRadioInline" name="status" value="approved" class="custom-control-input">
-                        <label class="custom-control-label" for="approved">Approved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="pending" name="customRadioInline" name="status" value="pending" class="custom-control-input">
-                        <label class="custom-control-label" for="pending">Pending</label>
-                    </div>
-                @endif
-
-                {{-- Pending --}}
-                @if ($user->status == 'pending')
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="pending" name="customRadioInline" name="status" value="pending" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="pending">Pending</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="unapproved" name="customRadioInline" name="status" value="unapproved" class="custom-control-input">
-                        <label class="custom-control-label" for="unapproved">Unapproved</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="approved" name="customRadioInline" name="status" value="approved" class="custom-control-input">
-                        <label class="custom-control-label" for="approved">Approved</label>
-                    </div>
-                @endif
+                <label>Status</label>
+                <select class="form-control" name="status">
+                    @if ($user->status == 'approved')
+                        <option value="approved">Approved</option>
+                        <option value="unapproved">Unapproved</option>
+                        <option value="pending">Pending</option>
+                    @endif
+                    @if ($user->status == 'unapproved')
+                        <option value="unapproved">Unapproved</option>
+                        <option value="approved">Approved</option>
+                        <option value="pending">Pending</option>
+                    @endif
+                    @if ($user->status == 'pending')
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="unapproved">Unapproved</option>
+                    @endif
+                </select>
             </div>
         </div>
 
