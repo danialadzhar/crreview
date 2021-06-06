@@ -17,8 +17,17 @@ class ConsultantController extends Controller
     public function index()
     {
         $user = Auth::User();
+        
+        if($user->status == 'unapproved' && $user->role == 'consultant')
+        {
 
-        return view('pages.consultant.index', compact('user'));
+            return view('pages.consultant.index', compact('user'));
+
+        }else{
+            
+            return redirect('home');
+
+        }
     }
 
     public function store(Request $request)
