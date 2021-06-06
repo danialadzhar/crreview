@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ConsultantAssigned;
 use Auth;
 
 class HomeController extends Controller
@@ -26,7 +27,10 @@ class HomeController extends Controller
     {   
         $user = Auth::User();
 
-        return view('home', compact('user'));
+        $count = 1;
+        $consultant_assigned = ConsultantAssigned::where('user_id', $user->user_id)->get();
+
+        return view('home', compact('user', 'consultant_assigned', 'count'));
     }
 
 }

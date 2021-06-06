@@ -16,6 +16,5 @@ class ConsultantInfo extends Model
         'address',
         'phoneno',
         'user_id',
-        'file_name'
     ];
 }
