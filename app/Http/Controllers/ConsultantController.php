@@ -18,16 +18,18 @@ class ConsultantController extends Controller
     {
         $user = Auth::User();
         
-        if($user->status == 'unapproved' && $user->role == 'consultant')
-        {
+        // if($user->status == 'unapproved' && $user->role == 'consultant')
+        // {
 
-            return view('pages.consultant.index', compact('user'));
+        //     return view('pages.consultant.index', compact('user'));
 
-        }else{
+        // }else{
             
-            return redirect('home');
+        //     return redirect('home');
 
-        }
+        // }
+
+        return view('pages.consultant.index', compact('user'));
     }
 
     public function store(Request $request)

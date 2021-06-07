@@ -53,7 +53,7 @@
     </div>
 </div>
 
-@elseif ($user->status == 'approve' && $user->role == 'consultant')
+@elseif ($user->status == 'approved' && $user->role == 'consultant')
 
 <div class="row mt-5">
     <div class="col-md-12">
