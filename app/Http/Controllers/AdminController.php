@@ -99,4 +99,16 @@ class AdminController extends Controller
 
         return redirect('admin')->with('success', 'Consultant Updated!');
     }
+
+     /**
+     * Sign Out
+     * 
+     * 
+     */
+    public function signout()
+    {
+        Auth::guard('admin')->logout();
+
+        return redirect('admin/login');
+    }
 }
